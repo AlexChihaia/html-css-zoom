@@ -45,13 +45,6 @@ body {
     height: 100vh;
 }
 
-/*
-.last.row {
-    display: flex;
-    margin: 0 auto;
-    gap: 5px;
-}
-*/
 
 
 
@@ -94,83 +87,86 @@ header .menu .buttons a {
 
 
 /*
-FOOTER
+Footer
 */
 
 footer {
     height: 80px;
     background-color: #222222;
-}
-
-footer .menu-footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
-
 }
 
-footer .menu-footer .menu-sinistra,
-footer .menu-footer .menu-centrale,
-footer .menu-footer .menu-destra {
-    color: white;
-
-}
-
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-}
-
-footer .menu-footer .menu-sinistra {
-    width: 20%;
-    height: 80px;
+.footer-flex {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
+    gap: 15px;
 }
 
-footer .menu-footer .menu-centrale {
-    width: 60%;
-    height: 80px;
+.footer-left,
+.footer-right {
+    width: 15%;
+}
+
+.footer-left {
+    padding-left: 10px;
+}
+
+.footer-right {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    justify-content: right;
+    height: 100%;
 }
 
-footer .menu-footer .menu-destra {
-    width: 20%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.btn.footer-tool i {
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 
-footer i {
-    padding-left: 5px;
-    font-size: 25px;
+.btn.chevron i {
+    font-size: 10px;
 }
 
-footer .button {
-    padding: 10px;
-}
-
-#share {
+.button-container.active .footer-tool i {
     color: #4bc800;
 }
 
-.end {
-    height: 80px;
-    width: 100px;
+footer .btn.btn-secondary {
+    padding: 20px;
+    color: #ff0000;
     background-color: #4a4a4a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-#call {
-    color: red;
+footer button {
+    background-color: #222222;
+    border: none;
+    color: white;
+}
+
+
+
+/*
+  Scrollbar
+  */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
